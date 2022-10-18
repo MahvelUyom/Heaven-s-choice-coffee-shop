@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<!-- Created By CodingNepal - www.codingnepalweb.com -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Responsive Navbar | CodingNepal</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="omo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    
+    <style>
+      *{
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+body{
+  font-family: montserrat;
+}
+nav{
+  background: #0082e6;
+  height: 80px;
+  width: 100%;
+}
+label.logo{
+  color: white;
+  font-size: 35px;
+  line-height: 80px;
+  padding: 0 100px;
+  font-weight: bold;
+}
+nav ul{
+  float: right;
+  margin-right: 20px;
+}
+nav ul li{
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+nav ul li a{
+  color: white;
+  font-size: 17px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+a.active,a:hover{
+  background: #1b9bff;
+  transition: .5s;
+}
+.checkbtn{
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+#check{
+  display: none;
+}
+@media (max-width: 952px){
+  label.logo{
+    font-size: 30px;
+    padding-left: 50px;
+  }
+  nav ul li a{
+    font-size: 16px;
+  }
+}
+@media (max-width: 858px){
+  .checkbtn{
+    display: block;
+  }
+  ul{
+    position: fixed;
+    width: 50%;
+    height: 100vh;
+    background: #2c3e50;
+    top: 80px;
+    opacity:80%;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+  }
+  nav ul li{
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  nav ul li a{
+    font-size: 20px;
+  }
+  a:hover,a.active{
+    background: none;
+    color: #0082e6;
+  }
+  #check:checked ~ ul{
+    left: 0;
+  }
+}
+section.main{
+  background:  url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTp9Y4w2wHSbo_2xUBS1h8R-7sgjNmBTQl7_g&usqp=CAU) ; 
+background-repeat: no-repeat;
+  background-size: cover;
+  height: calc(100vh - 80px);
+}
+    </style>
+  </head>
+  <body>
+    <nav>
+      <input type="checkbox" id="check">
+      <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <label class="logo">Heaven's Choice</label>
+      <ul>
+        <li><a class="active" href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Feedback</a></li>
+      </ul>
+    </nav>
+    <section class="main"></section>
+    
+    <section class="snack-div">
+  <h4>Snacks to follow</h4>
+     <div class="snacks">
+  <div class="snack">
+ 
+ 
+ 
+ <div class="img">
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCuLknelEK-F3GEV2QJ2EO3RhJuVsaGyfXjw&usqp=CAU" alt="" />
+ </div>
+ 
+ 
+ 
+ 
+  <h5>Shortbread</h5>
+  <p>Our early morning coffee is
+  <br>best taken with Shortbread</p>
+  </div>
+  <div class="snack">
+    
+    
+    <div class="img">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgLiZrclwZ0lD0m02-dGjvjJgY7LDTxftn-g&usqp=CAU" alt="" />
+    </div>
+    
+    
+    
+      <h5>Dainty Scones</h5>
+  <p>Our early morning coffee is
+  <br>best taken with scones</p>
+  </div>
+  <div class="snack">
+    
+    
+    
+    <div class="img">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7GhIl_u5DlU-Ip531x6yg1H4oGxMKq_gr5Q&usqp=CAU" alt="" />
+    </div>
+    
+    
+    
+      <h5>Belgian waffles</h5>
+  <p>Our early morning coffee is
+  <br>best taken with Belgian waffles</p>
+  </div>
+  <div class="snack">
+    
+    
+    
+    <div class="img">
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHRSWsI7KDQIok81goKMDtFQQ5bnvDt_gD8A&usqp=CAU" alt="" />
+    </div>
+  
+  
+  
+    <h5>Banana pancakes</h5>
+  <p>Our early morning coffee is
+  <br>best taken with banana pancakes</p>
+  </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+<section class="available">
+  <h4>Available Coffee</h4>
+  <div class="types">
+  <div class="coffee-type">
+    
+    
+    <div class="img">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtFO94X9cTt6GdF6oEf061dyDbDDdr3PRg9Q&usqp=CAU" />
+    </div>
+    
+    
+      <h5>Espresso</h5>
+  <p>Espresso instant coffee
+  <br>comes with a discount tag</p>
+  </div>
+  <div class="coffee-type">
+    
+    
+    
+    <div class="img">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRsoWwybZdkQHs5dfsz5AcxNakoFfvg6nzeA&usqp=CAU" alt="" />
+    </div>
+    
+    
+    
+    
+      <h5>Cappuccino coffee</h5>
+  <p>Cappuccino coffee is
+  <br>best taken with croissants</p>
+  </div>
+  <div class="coffee-type">
+    
+    
+    
+    
+    <div class="img">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbMFjSKofFcvn9PS2EyrEQiWtM5WiaUjQFCQ&usqp=CAU" />
+    </div>
+    
+    
+    
+     <h5>Hot chocolate coffee</h5>
+  <p>Hot chocolate coffee is
+  <br>prepared just how you like it</p>
+  </div>
+  <div class="coffee-type">
+    
+    
+    <div class="img">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6l7NXgxNoUSQOoO9XSMhNc-4FXouWdUFixg&usqp=CAU" alt="" />
+    </div>
+    
+    
+    
+     <h5>Double espresso coffee</h5>
+  <p>The double espresso is
+  <br>best taken with croissants</p>
+  </div>
+  </div>
+  
+</section>
+  
+  
+  
+  
+  
+  
+  
+<section class="popular-menu">
+  <h4>Popular Menu</h4>
+  <div class="menu">
+  <div class="popular">
+    
+    
+    <div class="img">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCYVcIEGssWzT_MfAxKHcPWuENx0ZDd4bJjA&usqp=CAU" alt="" /></div>
+    
+    
+       <h5>Ham x sandwich</h5>
+  <p>Cappuccino coffee is
+  <br>best taken with croissants</p>
+  </div>
+  <div class="popular">
+    
+    
+    
+    <div class="img">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdgg8x2YI161wQCpZpxxq6jU21WVKblOk8jQ&usqp=CAU" alt="" />
+    </div>
+    
+    
+       <h5>Hot choco x Scones</h5>
+  <p>Hot chocolate coffee x scones
+  <br>made it to our most popular menu</p>
+  </div>
+  <div class="popular">
+    
+    
+    
+    <div class="img">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkU7CzPjdpTSDdNw-EGUPYFHVTmJ8snZFhdQ&usqp=CAU" alt="" />
+    
+  </div>
+     <h5>Black coffee x croissant</h5>
+  <p>Black coffe is among
+  <br>our most popular orders</p>
+  </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+<section class="contact">
+  <div class="form-div">
+  <!--<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQH_MjArlqwYEEzF-Gxd9jL3nIsPtLXPm7v0A&usqp=CAU" alt="" />-->
+  <form action="">
+    <h4>Book A Table</h4>
+    <label for="Name">Name:</label>
+    <input type="text" placeholder="Your Name" required>
+    <br>
+    <br>
+      <label for="Phone">Phone:</label>
+    <input type="number" placeholder="Phone No" required>
+    <br>
+    <br>
+    <label for="guests"> Guest:</label>
+    <input type="number" placeholder="Guests No" maxlength="2" required>
+    <br>
+    <br>
+    <button type="submit">Place Booking</button>
+  </form>
+  </div>
+  
+</section>
+  
+  
+  
+    <div class="footer">
+
+    <div class="box-container">
+
+        <div class="box">
+            <h3>about us</h3>
+            <p>Drink Healthy is a government certified and registered company that helps its patronizers to keep track of how much they drink and suggested drinks recommended for each time of the day.</p>
+        </div>
+
+        <div class="box">
+            <h3>Quick links</h3>
+            <a href="#">home</a>
+            <a href="#">categories</a>
+            <a href="#">about</a>
+            <a href="#">contact</a>
+        </div>
+
+        <div class="box">
+            <h3>Follow us</h3>
+            <a href="#">facebook</a>
+            <a href="#">instagram</a>
+            <a href="#">twitter</a>
+        </div>
+
+        <div class="box">
+            <h3>Contact info</h3>
+            <div class="info">
+                <i class="fas fa-phone"></i>
+                <p> +234-81320-5541 <br> +234-90270-85295 </p>
+            </div>
+            <div class="info">
+                <i class="fas fa-envelope"></i>
+                <p> abassebu@gmail.com <br> mahveluyom@gmail.com </p>
+            </div>
+            <div class="info">
+                <i class="fas fa-map-marker-alt"></i>
+                <p> Port Harcourt, Rivers State. Nigeria </p>
+            </div>
+        </div>
+
+    </div>
+
+    <h1 class="credit"> &copy; designed by Middle_Child </h1>
+
+</div>
+
+  
+  
+  </body>
+</html>
